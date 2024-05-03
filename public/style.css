@@ -1,0 +1,107 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+}
+body{
+    background-color: black;
+}
+svg{
+    height: 25px;
+}
+.nav-bar{
+    background-color: rgb(52, 52, 52);
+    display: flex;
+    align-items: stretch;
+    position: relative;
+}
+.nav-bar>*{
+    width: 25%;
+    height: 3em;
+}
+.nav-bar>img{
+    width: auto;
+}
+.nav-bar>button{
+    cursor: pointer;
+    outline: none;
+    border: none ;
+    border-radius: 5px;
+    background-color:transparent;
+}
+.bodyGame{
+    margin-top: 50px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.bodyGame>div{
+    width: 80vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.options>form{
+    margin-top: 2em;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+.options>form>button{
+    cursor: pointer;
+    outline: none;
+    border: none ;
+    border-radius: 5px;
+    background-color:rgb(99, 99, 99);
+    height: 30px;
+}
+.score{
+    
+    text-align: center;
+    border-radius: 50%;
+    height: 80px;
+    background-color: white;
+    width: 80px;
+    position: absolute;
+    top: 55px;
+    right: 10px;
+    padding-top: 26px;
+}
+.score>p{
+    display: block;
+    color: black;
+}
+.options>form > button{
+    text-align: left;
+    padding-left: 20px;
+}
+
+@media (min-width : 300px ) and (max-width:720px){
+    body{
+        background-color: black;
+    }
+    .nav-bar{
+        align-items: center;
+        height: 10vh;
+    }
+    .nav-bar>*{
+        width: 50%;
+    }
+    button{
+        cursor: pointer;
+        outline: none;
+        border: none ;
+        border-radius: 5px;
+        background-color:transparent;
+    }
+    .nav-bar>img{
+        display: none;
+    }
+    .score{
+        position: absolute;
+        top: 10vh;
+        right: 10px;
+    }
+}
